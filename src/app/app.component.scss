@@ -1,0 +1,21 @@
+.text {
+  text-align: justify;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 30px;
+  text-align: center;
+  color: #333;
+}
+
+.input {
+  padding: 7px 20px;
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: 6px;
+  border: 1px solid #333;
+  outline: none;
+}

@@ -1,0 +1,23 @@
+<div id="modal" class="modal" [ngClass]="{ 'show': showModal }">
+  <div class="modal__main">
+    <button type="button" class="modal__close" (click)="close()">×</button>
+    <div class="modal__header">
+      <ng-content select="[modal-header]"></ng-content>
+    </div>
+    <div class="modal__body">
+      <ng-content select="[modal-body]"></ng-content>
+    </div>
+    <div class="modal__footer">
+      <div class="custom-element">
+        <ng-content select="[modal-footer]"></ng-content>
+      </div>
+      <div class="default-content text-right">
+        <button id="cancel" type="button" class="button button__default" (click)="cancel()">Cancel</button>
+        <button id="submit" type="button" class="button button__success" (click)="submit()">Submit</button>
+      </div>
+    </div>
+  </div>
+  <div id="background" class="modal__background" (click)="close()"></div>
+</div>
+
+
